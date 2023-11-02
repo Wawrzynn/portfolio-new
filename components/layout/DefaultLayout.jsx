@@ -8,7 +8,7 @@ const DefaultLayout = ({ children }) => {
 			<MetaHeaders />
 			<AppHeader />
 			<div>{children}</div>
-			{/* <AppFooter /> */}
+			<AppFooter />
 		</>
 	);
 };
