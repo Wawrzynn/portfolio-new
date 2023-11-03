@@ -3,12 +3,11 @@ import FormInput from "../reusable/FormInput";
 
 function ContactForm() {
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="w-3/4 md:w-1/2 ">
       <div className="leading-loose">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
+          action={process.env.formspree_uri}
+          method="POST"
           className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
         >
           <p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ContactDetails from "../components/contact/ContactDetails";
 import ContactForm from "../components/contact/ContactForm";
 import MetaHeaders from "../components/global/MetaHeaders";
+import MyComponent from "@/components/contact/GoogleMap";
 
 export default function contact() {
   return (
@@ -16,11 +17,13 @@ export default function contact() {
           duration: 0.5,
           delay: 0.1,
         }}
-        className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5"
+        className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center"
       >
         <ContactForm />
-
-        <ContactDetails />
+        <div className="flex flex-col my-10">
+          <ContactDetails />
+            <MyComponent/>
+        </div>
       </motion.div>
     </div>
   );
