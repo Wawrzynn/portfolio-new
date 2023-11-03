@@ -65,20 +65,20 @@ function Footer() {
         </div>
       </div>
       <div className="max-w-4xl w-full m-auto text-center text-fun-gray border-t border-fun-pink-dark">
-        <p className="flex flex-col pt-5 items-center justify-center  text-primary-dark dark:text-ternary-light">
+        <div className="flex flex-col pt-5 items-center justify-center  text-primary-dark dark:text-ternary-light">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             Made with{" "}
             <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
               <span>
-                <Image src={ReactImage} width="26" title="React" />
+                <Image src={ReactImage} width="26" title="React" alt="React icon"/>
                 <span className="sr-only">React</span>
               </span>
               <span>
-                <Image src={NextImage} width="26" title="Next" />
+                <Image src={NextImage} width="26" title="Next" alt="Nextjs icon"/>
                 <span className="sr-only">NextJS</span>
               </span>
               <span>
-                <Image src={TailwindImage} width="26" title="TailwindCSS" />
+                <Image src={TailwindImage} width="26" title="TailwindCSS" alt="Tailwnd icon"/>
                 <span className="sr-only">TailwindCSS</span>
               </span>
             </div>
@@ -93,7 +93,7 @@ function Footer() {
             </a>
             . All rights reserved.
           </div>
-        </p>
+        </div>
       </div>
 
       <div className="mt-8 text-center sm:text-right sm:-mt-12 ">
