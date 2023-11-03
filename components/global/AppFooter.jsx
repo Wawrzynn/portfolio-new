@@ -4,41 +4,81 @@ import React from "react";
 import Image from "next/image";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 
+import TailwindImage from "../../public/images/tailwindcss.svg";
+import ReactImage from "../../public/images/react.svg";
 import githubImage from "../../public/images/github.svg";
+import NextImage from "../../public/images/nextjs.svg";
+import {
+  FiGithub,
+  FiTwitter,
+  FiLinkedin,
+  FiGlobe,
+  FiYoutube,
+} from "react-icons/fi";
 
 function Footer() {
   const [activeTheme, setTheme] = useThemeSwitcher();
 
+  const socialLinks = [
+    {
+      id: 1,
+      icon: <FiGlobe />,
+      url: "jedrzejkosakowski.vercel.app/",
+    },
+    {
+      id: 2,
+      icon: <FiGithub />,
+      url: "https://github.com/Wawrzynn",
+    },
+    {
+      id: 3,
+      icon: <FiTwitter />,
+      url: "https://twitter.com/wawrzynnnn",
+    },
+    {
+      id: 4,
+      icon: <FiLinkedin />,
+      url: "https://www.linkedin.com/in/jedrzej-kosakowski/",
+    },
+  ];
+
   return (
-    <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg ">
-      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
-        <p className="flex flex-col items-center justify-center  text-primary-dark dark:text-ternary-light">
+    <footer className="flex flex-col w-screen px-5 border-t border-fun-pink-darker z-5 bg-bg pb-10">
+      <div className=" border-primary-light dark:border-secondary-dark my-10">
+        {/* Footer social links */}
+        <div className="font-general-regular flex flex-col justify-center items-center">
+          <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
+            Find me on:
+          </p>
+          <ul className="flex gap-4 sm:gap-8">
+            {socialLinks.map((link) => (
+              <a
+                href={link.url}
+                target="__blank"
+                key={link.id}
+                className="text-gray-400 hover:text-primary-dark dark:hover:text-primary-light cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm duration-300 px-3 py-3"
+              >
+                <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+              </a>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="max-w-4xl w-full m-auto text-center text-fun-gray border-t border-fun-pink-dark">
+        <p className="flex flex-col pt-5 items-center justify-center  text-primary-dark dark:text-ternary-light">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             Made with{" "}
             <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
               <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  width="26"
-                  title="React"
-                />
+                <Image src={ReactImage} width="26" title="React" />
                 <span className="sr-only">React</span>
               </span>
               <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                  width="40"
-                  className="invert"
-                  title="NextJS"
-                />
+                <Image src={NextImage} width="26" title="Next" />
                 <span className="sr-only">NextJS</span>
               </span>
               <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  width="26"
-                  title="TailwindCSS"
-                />
+                <Image src={TailwindImage} width="26" title="TailwindCSS" />
                 <span className="sr-only">TailwindCSS</span>
               </span>
             </div>
@@ -55,6 +95,7 @@ function Footer() {
           </div>
         </p>
       </div>
+
       <div className="mt-8 text-center sm:text-right sm:-mt-12 ">
         <a
           className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border px-4 py-2 rounded-xl cursor-pointer opacity-50 hover:border-fun-pink-dark hover:opacity-100 transition-all duration-300 ease-in-out"
