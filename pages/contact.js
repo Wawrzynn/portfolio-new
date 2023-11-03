@@ -9,6 +9,7 @@ export default function contact() {
     <div>
       <MetaHeaders title="Contact" />
 
+      <h1 className="w-full flex justify-center text-primary-dark dark:text-primary-light text-4xl font-medium">Contact</h1>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -12,8 +12,6 @@ import {
   FiGithub,
   FiTwitter,
   FiLinkedin,
-  FiGlobe,
-  FiYoutube,
 } from "react-icons/fi";
 
 function Footer() {
@@ -22,21 +20,16 @@ function Footer() {
   const socialLinks = [
     {
       id: 1,
-      icon: <FiGlobe />,
-      url: "jedrzejkosakowski.vercel.app/",
-    },
-    {
-      id: 2,
       icon: <FiGithub />,
       url: "https://github.com/Wawrzynn",
     },
     {
-      id: 3,
+      id: 2,
       icon: <FiTwitter />,
       url: "https://twitter.com/wawrzynnnn",
     },
     {
-      id: 4,
+      id: 3,
       icon: <FiLinkedin />,
       url: "https://www.linkedin.com/in/jedrzej-kosakowski/",
     },
