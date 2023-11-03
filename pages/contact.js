@@ -1,3 +1,27 @@
-export default function Projects() {
-  return <h1>Contact Page</h1>
+import { motion } from "framer-motion";
+import ContactDetails from "../components/contact/ContactDetails";
+import ContactForm from "../components/contact/ContactForm";
+import MetaHeaders from "../components/global/MetaHeaders";
+
+export default function contact() {
+  return (
+    <div>
+      <MetaHeaders title="Contact" />
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.5,
+          delay: 0.1,
+        }}
+        className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5"
+      >
+        <ContactForm />
+
+        <ContactDetails />
+      </motion.div>
+    </div>
+  );
 }
