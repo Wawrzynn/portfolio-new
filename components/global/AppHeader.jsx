@@ -4,7 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import Logo from "../../public/images/logo.svg";
+import DarkLogo from "../../public/images/logo-dark.svg";
+import LightLogo from "../../public/images/logo-light.svg";
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,7 +35,7 @@ function AppHeader() {
               {activeTheme === "dark" ? (
                 <div className="flex items-center">
                 <Image
-                  src={Logo}
+                  src={DarkLogo}
                   className="cursor-pointer mr-5"
                   alt="Dark Logo"
                   width={40}
@@ -45,7 +46,7 @@ function AppHeader() {
               ) : (
                 <div className="flex items-center">
                 <Image
-                  src={Logo}
+                  src={LightLogo}
                   className="cursor-pointer mr-5"
                   alt="Dark Logo"
                   width={40}

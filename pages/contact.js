@@ -6,7 +6,7 @@ import MyComponent from "@/components/contact/GoogleMap";
 
 export default function contact() {
   return (
-    <div>
+    <>
       <MetaHeaders title="Contact" />
 
       <h1 className="w-full flex justify-center text-primary-dark dark:text-primary-light text-4xl font-medium">Contact</h1>
@@ -26,6 +26,6 @@ export default function contact() {
             <MyComponent/>
         </div>
       </motion.div>
-    </div>
+    </>
   );
 }
