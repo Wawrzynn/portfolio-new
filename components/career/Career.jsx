@@ -61,7 +61,19 @@ export default function Experience() {
                   company={exp.company}
                   companyLink={exp.companyLink}
                 />
-                {idx%2 === 0 ? <Image src={exp.photo} alt="PutPhoto" className="absolute right-64 w-28 hidden xl:block"/>: <Image src={exp.photo} alt="PutPhoto" className="absolute left-64 w-40 hidden xl:block"/>}
+                {idx % 2 === 0 ? (
+                  <Image
+                    src={exp.photo}
+                    alt="PutPhoto"
+                    className="absolute right-64 w-28 hidden xl:block"
+                  />
+                ) : (
+                  <Image
+                    src={exp.photo}
+                    alt="PutPhoto"
+                    className="absolute left-64 w-32 hidden xl:block"
+                  />
+                )}
               </div>
               {idx === experience.length - 1 ? null : (
                 <div className="divider-container flex flex-col items-center -mt-2">
