@@ -1,5 +1,39 @@
 import { v4 as uuidv4 } from "uuid";
 
+export const aboutData = {
+  name: "Jędrzej Kosakowski",
+  title: "Web Developer",
+  description1:
+    "I am a passionate developer with +1.5 years of work experience in JavaScript and love learning new technologies since I discovered programming, I am currently learning the way to be a JS fullstack developer.",
+  description2:
+    "I am familiar with web, mobile and desktop development and technologies like: Next.js, React and Tailwind CSS, to add I also have experience working in Backend with Node (especially ExpressJS) and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect, GitFlow practices and agile methodologies.",
+  tools1:
+    "Here you can have a look at all the programming languages, libraries, and tools I've worked with, I started programming about 2 years ago. I have tried a few programming languages and technology stack, both Backend and Frontend.",
+  tools2:
+    "I have tried both backend and frontend development. But primarily my focus was on frontend development, later however I also added to my skillset sever backend technologies. Currently my variety of tools is still expanding.",
+  image: "/images/profile.png",
+  cv: "/files/CV.pdf",
+  cvEnglish: "/files/CV-English.pdf",
+};
+
+export const toolsData = {
+  languages: ["JavaScript", "HTML", "CSS", "Groovy"],
+  frameworks: ["React", "Next.js", "ExpressJS", "JQuery", "React Native"],
+  libraries: ["Redux", "React Router", "React Forms", "Jest"],
+  styles: [
+    "Tailwind CSS",
+    "Bootstrap",
+    "Material UI",
+    "SASS",
+    "PostCSS",
+    "Styled Components",
+    "Framer motion",
+  ],
+  backend: ["Node.js", "ExpressJS", "NoSQL", "Docker"],
+  databases: ["MongoDB", "PostgreSQl", "Firebase"],
+  tools: ["Git", "Postman", "VSCode", "Web Storm", "Github", "ESLint"],
+};
+
 export const projectsData = [
   {
     id: uuidv4(),
