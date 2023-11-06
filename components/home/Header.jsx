@@ -2,12 +2,14 @@ import Image from "next/image";
 import CVButton from "../reusable/CVButton";
 
 export default function Header() {
+  const text = "Hi, I' m";
+
   return (
     <section>
       <div className="flex sm:flex-row w-full justify-around items-center mt-14 flex-col">
         <div className="flex flex-col sm:items-start items-center">
           <h1 className="text-4xl font-medium text-primary-dark dark:text-primary-light">
-            Hi, I'm <span className="text-secondary">Jędrzej</span>
+           {text} <span className="text-secondary">Jędrzej</span>
           </h1>
           <br />
           <p className="text-lg text-primary-dark dark:text-primary-light">
