@@ -1,5 +1,7 @@
 import { aboutData } from "../../data/data";
 import Image from "next/image";
+import Button from "../reusable/Button";
+import {AiOutlineCloudDownload} from "react-icons/ai";
 
 export default function Introduction() {
   return (
@@ -13,6 +15,16 @@ export default function Introduction() {
             <h2 className="w-full flex justify-start sm:justify-center text-primary-dark dark:text-primary-light text-lg font-medium">
               {aboutData.title}
             </h2>
+            <a
+              href="files/CV.pdf"
+              download
+              className="flex justify-start sm:justify-center"
+            >
+              <span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-primary-dark dark:bg-primary-light dark:text-primary-dark focus:ring-1 rounded-lg mt-6 duration-500 flex flex-row justify-between items-center">
+                <Button title="Download CV" aria-label="Download CV" />
+                <AiOutlineCloudDownload className="ml-5 w-7 h-7" />
+              </span>
+            </a>
           </div>
           <Image
             src={aboutData.image}
@@ -31,7 +43,6 @@ export default function Introduction() {
             {aboutData.description2}
           </p>
         </div>
-      
       </div>
     </div>
   );
