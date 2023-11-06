@@ -11,7 +11,7 @@ export default function Header() {
           </h1>
           <br />
           <p className="text-lg text-primary-dark dark:text-primary-light">
-           I am a wev developer
+           I am a web developer
           </p>
           <p className="text-lg text-stone-500 dark:text-primary-light">
             and a student of Computer Science
