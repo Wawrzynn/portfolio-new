@@ -2,8 +2,6 @@ import Image from "next/image";
 import CVButton from "../reusable/CVButton";
 
 export default function Header() {
-  const text = "I\'m a full-stack web"
-
   return (
     <section>
       <div className="flex sm:flex-row w-full justify-around items-center mt-14 flex-col">
@@ -13,7 +11,7 @@ export default function Header() {
           </h1>
           <br />
           <p className="text-lg text-primary-dark dark:text-primary-light">
-           {text}
+           I am a wev developer
           </p>
           <p className="text-lg text-stone-500 dark:text-primary-light">
             and a student of Computer Science
