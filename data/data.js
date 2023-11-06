@@ -34,6 +34,51 @@ export const toolsData = {
   tools: ["Git", "Postman", "VSCode", "Web Storm", "Github", "ESLint"],
 };
 
+export const toolsDetails = {
+  react: {
+    name: "React",
+    description:
+      "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+    icon: "/images/react.svg",
+    link: "https://reactjs.org/",
+  },
+  tailwind: {
+    name: "Tailwnd CSS",
+    description:
+      "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.",
+    icon: "/images/tailwindcss.svg",
+    link: "https://tailwindcss.com/",
+  },
+  express: {
+    name: "ExpressJS",
+    description:
+      "Express.js, or simply Express, is a back end web application framework for Node.js, released as free and open-source software under the MIT License.",
+    icon: "/images/express.png",
+    link: "https://expressjs.com/",
+  },
+  mongodb: {
+    name: "MongoDB",
+    description:
+      "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.",
+    icon: "/images/mongodb.png",
+    link: "https://www.mongodb.com/",
+  },
+  nodejs: {
+    name: "Node.js",
+    description:
+      "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
+    icon: "/images/node.png",
+    link: "https://nodejs.org/",
+  },
+  javascript: {
+    name: "JavaScript",
+    description:
+      "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.",
+    icon: "/images/js.png",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+};
+
 export const projectsData = [
   {
     id: uuidv4(),

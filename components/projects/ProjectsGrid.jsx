@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
-import ProjectItem from "./ProjectItem";
+import ProjectItem from "../reusable/ProjectItem";
 import { projectsData } from "../../data/data";
 
 function ProjectsGrid() {
