@@ -163,7 +163,7 @@ export const projectsData = [
     image: "/images/projects/portfolio.png",
     githubLink: "https://github.com/Wawrzynn/portfolio-new",
     siteLink: "https://jedrzejkosakowski.vercel.app/",
-    inProgress: true,
+    inProgress: false,
   },
   {
     id: uuidv4(),
@@ -171,7 +171,7 @@ export const projectsData = [
     description:
       "School CMS is a web application for managing school. The application was created in React and ExpressJS.",
     image: "/images/projects/school.png",
-    githubLink: "",
+    githubLink: "https://github.com/Wawrzynn/CMS",
     siteLink: "",
     inProgress: true,
   },

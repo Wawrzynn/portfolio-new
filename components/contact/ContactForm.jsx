@@ -3,13 +3,37 @@ import FormInput from "../reusable/FormInput";
 import { useState } from "react";
 
 function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    setTimeout(() => {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }, 2000);
+  };
+
   return (
     <div className="lg:w-full">
       <div className="leading-loose">
         <form
-          action={process.env.formspree_uri}
+          action={process.env.NEXT_PUBLIC_FORMSPREE_URL}
           method="POST"
           className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
+          onSubmit={handleSubmit}
         >
           <p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
             Contact Form
@@ -23,6 +47,8 @@ function ContactForm() {
             inputName="name"
             placeholderText="Your Name"
             ariaLabelName="Name"
+            value={formData.name}
+            onChange={handleChange}
           />
           <FormInput
             inputLabel="Email"
@@ -32,6 +58,8 @@ function ContactForm() {
             inputName="email"
             placeholderText="Your email"
             ariaLabelName="Email"
+            value={formData.email}
+            onChange={handleChange}
           />
           <FormInput
             inputLabel="Subject"
@@ -41,6 +69,8 @@ function ContactForm() {
             inputName="subject"
             placeholderText="Subject"
             ariaLabelName="Subject"
+            value={formData.subject}
+            onChange={handleChange}
           />
 
           <div className="mt-6">
@@ -57,11 +87,14 @@ function ContactForm() {
               cols="14"
               rows="6"
               aria-label="Message"
+              placeholder="Your message"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
           </div>
 
           <div className="mt-6">
-            <span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-primary-dark dark:bg-primary-light dark:text-primary-dark focus:ring-1 rounded-lg mt-6 duration-500">
+            <span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-primary-dark dark:bg-primary-light dark:text-primary-dark focus:ring-1 rounded-lg mt-6 duration-500 hover:bg-primary-light hover:text-primary-dark dark:hover:bg-primary-dark dark:hover:text-primary-light hover:border">
               <Button
                 title="Send Message"
                 type="submit"

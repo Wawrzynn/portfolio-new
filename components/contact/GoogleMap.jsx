@@ -15,9 +15,12 @@ const center = {
 function Map() {
   return (
     <div className="p-7 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl hidden md:block">
-      <LoadScript googleMapsApiKey={process.env.api_map_key}>
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={11}>
-        </GoogleMap>
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_API_MAP_KEY}>
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={11}
+        ></GoogleMap>
       </LoadScript>
     </div>
   );
