@@ -1,9 +1,8 @@
 import Image from "next/image";
-import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import TailwindImage from "../../public/images/tailwindcss.svg";
 import ReactImage from "../../public/images/react.svg";
 import githubImage from "../../public/images/github.svg";
-import NextImage from "../../public/images/nextjs.svg";
+import NextImage from "../../public/images/next.png";
 import {
   FiGithub,
   FiTwitter,
@@ -11,7 +10,6 @@ import {
 } from "react-icons/fi";
 
 function Footer() {
-  const [activeTheme, setTheme] = useThemeSwitcher();
 
   const socialLinks = [
     {

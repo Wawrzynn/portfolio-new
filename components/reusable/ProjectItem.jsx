@@ -23,8 +23,6 @@ const ProjectItem = (props) => {
           src={props.image}
           className="rounded-t-xl border-none w-full h-72 object-cover xl:h-48"
           alt="Single Project"
-          // layout="responsive"
-          // fill="responsive"
           width={200}
           height={200}
         />
