@@ -10,11 +10,11 @@ export default function Tools() {
           Skills & tools
         </h1>
         <div className="w-full flex flex-col items-center mt-10">
-          <p className="w-full flex justify-center text-primary-dark dark:text-primary-light text-lg font-medium">
+          <p className="w-full flex justify-center text-primary-dark dark:text-primary-light text-lg font-medium text-justify">
             {aboutData.tools1}
           </p>
           <br />
-          <p className="w-full flex justify-center text-primary-dark dark:text-primary-light text-lg font-medium mb-10">
+          <p className="w-full flex justify-center text-primary-dark dark:text-primary-light text-lg font-medium mb-10 text-justify">
             {aboutData.tools2}
           </p>
         </div>

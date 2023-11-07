@@ -6,14 +6,12 @@ import Contact from "@/components/home/Contact";
 
 export default function Home() {
   return (
-    <>
+    <div className="container mx-auto">
       <MetaHeaders title="Home" />
-      <div className="container mx-auto">
-        <Header />
-        <Projects />
-        <Tools />
-        <Contact />
-      </div>
-    </>
+      <Header />
+      <Projects />
+      <Tools />
+      <Contact />
+    </div>
   );
 }

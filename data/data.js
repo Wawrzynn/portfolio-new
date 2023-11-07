@@ -1,5 +1,40 @@
 import { v4 as uuidv4 } from "uuid";
 
+export const experienceData = [
+  {
+    title: "Master's Degree",
+    company: "Poznan University of Technology",
+    startYear: "mar. 2022",
+    endYear: "Present",
+    companyLink: "https://www.put.poznan.pl/en",
+    desc: "I am currently studying at Poznan University of Technology with a specialization in Computer Science (Web technologies).",
+  },
+  {
+    title: "Web developer",
+    company: "Sense Monitoring",
+    startYear: "jun. 2021",
+    endYear: "feb. 2023",
+    companyLink: "https://sense-monitoring.com/en/",
+    desc: "I worked as a web developer at Sense Monitoring. I worked with Groovy, Grails, Hibernate and many other technologies.",
+  },
+  {
+    title: "Bachelor's Degree",
+    company: "Poznan University of Technology",
+    startYear: "sep. 2018",
+    endYear: "feb. 2022",
+    companyLink: "https://www.put.poznan.pl/en",
+    desc: "I graduated from Poznan University of Technology with a specialization in Automatics and Robotics.",
+  },
+  {
+    title: "High School",
+    company: "XVI LO im.Charlesa de Gaulle'a w Poznaniu",
+    startYear: "nov. 2015",
+    endYear: "jun. 2018",
+    companyLink: "https://zso2.pl/",
+    desc: "I graduated from high school with a specialization in mathematics and physics.",
+  },
+];
+
 export const aboutData = {
   name: "Jędrzej Kosakowski",
   title: "Web Developer",

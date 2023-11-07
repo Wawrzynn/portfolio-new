@@ -4,13 +4,13 @@ import Tools from "../components/about/Tools";
 
 export default function About() {
   return (
-    <>
+    <div className="container mx-auto">
       <MetaHeaders title="About" />
       <h1 className="w-full flex justify-center text-primary-dark dark:text-primary-light text-4xl font-medium">
         About me
       </h1>
       <Introduction />
       <Tools />
-    </>
+    </div>
   );
 }

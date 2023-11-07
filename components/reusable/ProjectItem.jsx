@@ -7,8 +7,6 @@ import {
   AiFillCheckCircle,
 } from "react-icons/ai";
 
-// const imageStyle = { maxWidth: "100%", height: "200px" };
-
 const ProjectItem = (props) => {
   return (
     <motion.div

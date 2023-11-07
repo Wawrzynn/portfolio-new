@@ -34,25 +34,29 @@ function AppHeader() {
             <Link href="/">
               {activeTheme === "dark" ? (
                 <div className="flex items-center">
-                <Image
-                  src={DarkLogo}
-                  className="cursor-pointer mr-5"
-                  alt="Dark Logo"
-                  width={40}
-                  height={40}
-                />
-                <h1 className="text-left text-lg font-medium text-primary-dark hidden md:block">Jędrzej Kosakowski</h1>
+                  <Image
+                    src={DarkLogo}
+                    className="cursor-pointer mr-5"
+                    alt="Dark Logo"
+                    width={40}
+                    height={40}
+                  />
+                  <h1 className="text-left text-lg font-medium text-primary-dark hidden md:block">
+                    Jędrzej Kosakowski
+                  </h1>
                 </div>
               ) : (
                 <div className="flex items-center">
-                <Image
-                  src={LightLogo}
-                  className="cursor-pointer mr-5"
-                  alt="Dark Logo"
-                  width={40}
-                  height={40}
-                />
-                <h1 className="text-left text-lg font-medium text-primary-light hidden md:block">Jędrzej Kosakowski</h1>
+                  <Image
+                    src={LightLogo}
+                    className="cursor-pointer mr-5"
+                    alt="Dark Logo"
+                    width={40}
+                    height={40}
+                  />
+                  <h1 className="text-left text-lg font-medium text-primary-light hidden md:block">
+                    Jędrzej Kosakowski
+                  </h1>
                 </div>
               )}
             </Link>
@@ -166,9 +170,7 @@ function AppHeader() {
           </div>
         </div>
 
-        {/* Header right section buttons */}
         <div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-          {/* Theme switcher large screen */}
           <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"

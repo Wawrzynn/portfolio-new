@@ -1,9 +1,10 @@
 import Button from "../reusable/Button";
 import FormInput from "../reusable/FormInput";
+import { useState } from "react";
 
 function ContactForm() {
   return (
-    <div className="w-3/4 md:w-1/2 ">
+    <div className="lg:w-full">
       <div className="leading-loose">
         <form
           action={process.env.formspree_uri}

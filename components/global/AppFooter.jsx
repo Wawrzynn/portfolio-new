@@ -1,9 +1,5 @@
-import { useState } from "react";
-import Link from "next/link";
-import React from "react";
 import Image from "next/image";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
-
 import TailwindImage from "../../public/images/tailwindcss.svg";
 import ReactImage from "../../public/images/react.svg";
 import githubImage from "../../public/images/github.svg";
@@ -38,7 +34,6 @@ function Footer() {
   return (
     <footer className="flex flex-col w-screen px-5 border-t border-fun-pink-darker z-5 bg-bg pb-10">
       <div className=" border-primary-light dark:border-secondary-dark my-10">
-        {/* Footer social links */}
         <div className="font-general-regular flex flex-col justify-center items-center">
           <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
             Find me on:
@@ -71,7 +66,7 @@ function Footer() {
                 <span className="sr-only">NextJS</span>
               </span>
               <span>
-                <Image src={TailwindImage} width="26" title="TailwindCSS" alt="Tailwnd icon"/>
+                <Image src={TailwindImage} width="26" title="TailwindCSS" alt="Tailwind icon"/>
                 <span className="sr-only">TailwindCSS</span>
               </span>
             </div>
