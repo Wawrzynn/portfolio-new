@@ -8,10 +8,10 @@ export default function Introduction() {
       <div className="w-full flex flex-col items-center">
         <div className="w-full flex flex-row items-center justify-around">
           <div>
-            <h1 className="w-full flex justify-start text-primary-dark dark:text-primary-light text-4xl font-medium">
+            <h1 className="w-full flex justify-start md:justify-center text-primary-dark dark:text-primary-light text-4xl font-medium">
               {aboutData.name}
             </h1>
-            <h2 className="w-full flex justify-start sm:justify-center text-primary-dark dark:text-primary-light text-lg font-medium">
+            <h2 className="w-full flex justify-start md:justify-center text-primary-dark dark:text-primary-light text-lg font-medium">
               {aboutData.title}
             </h2>
             <CVButton />
