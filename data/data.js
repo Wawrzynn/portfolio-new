@@ -171,7 +171,7 @@ export const projectsData = [
     description:
       "School CMS is a web application for managing school. The application was created in React and ExpressJS.",
     image: "/images/projects/school.png",
-    githubLink: "https://github.com/Wawrzynn/CMS",
+    githubLink: "https://github.com/Wawrzynn/cms-project",
     siteLink: "",
     inProgress: true,
   },
