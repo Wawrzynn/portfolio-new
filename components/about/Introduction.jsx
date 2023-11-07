@@ -14,7 +14,7 @@ export default function Introduction() {
             <h2 className="w-full flex justify-start md:justify-center text-primary-dark dark:text-primary-light text-lg font-medium">
               {aboutData.title}
             </h2>
-            <CVButton />
+            <CVButton text="Get my CV" aria-label="Get my CV"/>
           </div>
           <Image
             src={aboutData.image}

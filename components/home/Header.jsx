@@ -16,7 +16,7 @@ export default function Header() {
           <p className="text-lg text-stone-500 dark:text-primary-light">
             and a student of Computer Science
           </p>
-          <CVButton />
+          <CVButton text="Get my CV" aria-label="Get my CV"/>
         </div>
 
         <div>

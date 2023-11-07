@@ -19,6 +19,9 @@ module.exports = {
         "secondary-dark": "#303030",
         "ternary-dark": "#383838",
 
+        // Hover colors
+        "primary-hover": "#78716c",
+
         // Extended v3 color
         gray: colors.neutral,
       },
