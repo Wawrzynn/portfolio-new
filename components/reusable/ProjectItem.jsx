@@ -19,13 +19,27 @@ const ProjectItem = (props) => {
       }}
     >
       <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark sm:h-full">
-        <Image
-          src={props.image}
-          className="rounded-t-xl border-none w-full h-72 object-cover xl:h-48"
-          alt="Single Project"
-          width={200}
-          height={200}
-        />
+        {props.siteLink ? (
+          <a href={props.siteLink} target="blank">
+            <Image
+              src={props.image}
+              className="rounded-t-xl border-none w-full h-72 object-cover xl:h-48"
+              alt="Single Project"
+              width={200}
+              height={200}
+            />
+          </a>
+        ) : (
+          <a href={props.githubLink} target="blank">
+            <Image
+              src={props.image}
+              className="rounded-t-xl border-none w-full h-72 object-cover xl:h-48"
+              alt="Single Project"
+              width={200}
+              height={200}
+            />
+          </a>
+        )}
         <div className="text-justify px-4 py-6">
           <p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light mb-2">
             {props.title}
