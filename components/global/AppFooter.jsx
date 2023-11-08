@@ -30,7 +30,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="flex flex-col w-screen px-5 border-t border-fun-pink-darker z-5 bg-bg pb-10">
+    <footer className="flex flex-col px-5 border-t border-fun-pink-darker z-5 bg-bg pb-10">
       <div className=" border-primary-light dark:border-secondary-dark my-10">
         <div className="font-general-regular flex flex-col justify-center items-center">
           <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
