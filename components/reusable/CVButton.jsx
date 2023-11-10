@@ -4,7 +4,7 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 function CVButton({text}) {
   return (
     <a
-      href="files/CV.pdf"
+      href="files/CV-english.pdf"
       download
       className="flex justify-start md:justify-center"
     >
