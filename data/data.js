@@ -142,7 +142,7 @@ export const projectsData = [
       "Application for managing tasks. There are 3 applications written in different technologies: React, Svelte and Angular. All are using MongoDB.",
     image: "/images/projects/todo.png",
     githubLink: "https://github.com/Wawrzynn/frontend-development",
-    siteLink: "",
+    siteLink: "https://todo-react-jk.vercel.app/",
     inProgress: false,
   },
   {
@@ -167,9 +167,9 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: "School CMS",
+    title: "Blog CMS",
     description:
-      "School CMS is a web application for managing school. The application was created in React and ExpressJS.",
+      "Blog CMS is a project to maintain a blog site. The application was created in React and ExpressJS.",
     image: "/images/projects/school.png",
     githubLink: "https://github.com/Wawrzynn/cms-project",
     siteLink: "",
