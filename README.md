@@ -1,64 +1,25 @@
-<h1 align="center" id="title">Portfolio</h1>
+# Portfolio project &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/Wawrzynn/portfolio-new/blob/main/LICENSE)
 
-<p align="center"><img src="https://socialify.git.ci/Wawrzynn/portfolio-new/image?forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+My portfolio website build using React, TailwindCSS and Next.js.
 
-<p id="description">Portfolio is a project focused on showcasing some of my skills. It us build using Next and TailwindCSS. You can find there listing of my projects and some personal informations about me and tools and technologies I use. Also there is a possibility of contacting me.</p>
-
-<p align="center"><img src="https://img.shields.io/github/license/Wawrzynn/portfolio-new" alt="shields"><img src="https://img.shields.io/github/last-commit/Wawrzynn/portfolio-new" alt="shields"><img src="https://img.shields.io/github/languages/count/Wawrzynn/portfolio-new" alt="shields"></p>
-
-<h2>🚀 Demo</h2>
-
-[https://jedrzejkosakowski.vercel.app/](https://jedrzejkosakowski.vercel.app/)
-
-<h2>Project Screenshots:</h2>
-
-<img src="https://res.cloudinary.com/dgatl1bph/image/upload/v1699531414/Portfolio-1.png" alt="project-screenshot" width="1000" height="400/">
-
-<img src="https://res.cloudinary.com/dgatl1bph/image/upload/v1699531578/Portfolio2.png" alt="project-screenshot" width="1000" height="400/">
-
-<h2>🛠️ Installation Steps:</h2>
-
-<p>1. Clone the repo</p>
-
-```
-git clone [template_directory]
-```
-
-<p>2. Go to portfolio</p>
-
-```
-cd portfolio-new
-```
-
-<p>3. Install dependencies</p>
-
-```
+## Installing / Getting started
+```shell
 npm install
-```
-
-<p>4. Run the project</p>
-
-```
 npm run dev
 ```
+With those two commands user installs all required depndecies and starts the project using next.
 
-<p>5. Go to localhost:3000 in web browser</p>
+## Developing
 
-```
-http://localhost:3000/ 
-```
+### Built With
+Build with React, Next.js and TailwindCSS.
 
-  
-  
-<h2>💻 Built with</h2>
+### Prerequisites
+To run the project user needs Node from [nodejs.org](https://nodejs.org/en).
 
-Technologies used in the project:
+### Setting up Dev
+No need for any additional setup besides the one listed above.
 
-*   NextJS
-*   React
-*   TailwindCSS
-*   Vercel
+## Licensing
 
-<h2>🛡️ License:</h2>
-
-This project is licensed under the MIT License
+Project uses MIT license.
